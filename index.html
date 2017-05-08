@@ -29,9 +29,15 @@
         <p class="me-text">Jeremy Dieuze</p>
         </div>
     <div class="line"><hr style="height:2px;border:none;color:#333;background-color:#333;" /></div>
-    <p>Etudiant ingénieur en informatique</p>
-
+    <p class="description">Etudiant ingénieur en informatique</p>
     </div>
+
+    <section id="cursus">
+    	<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=16MQBiyXKgqM1gZ4e6MzMCziL3wlRp0nX42ne-GRLeEI&font=Lustria-Lato&lang=fr&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    </section>
+    <section id="cursus">
+    	coucou
+    </section>
 </body>
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
@@ -40,9 +46,11 @@
 <script src="js/d3-ease.v0.6.js"></script>
 <script src="js/letters.js"></script>
 <script src="js/anime.min.js"></script>
+<script src="js/charming.min.js"></script>
+<script src="js/textfx.js"></script>
 
 <script>
-particlesJS("particles-js", {
+particlesJS({
     "particles": {
         "number": {
             "value": 80,
@@ -112,7 +120,7 @@ particlesJS("particles-js", {
         }
     },
     "interactivity": {
-        "detect_on": "canvas",
+        "detect_on": "window",
         "events": {
             "onhover": {
                 "enable": true,
@@ -172,16 +180,46 @@ var options =  {   // word 3
 
 // Initializing the text (Letters parameters: container-element, options)
 var myText = new Letters(el, options);
-
 // Show letters with the default options defined
 myText.show();
 
+var description = new TextFx(document.querySelector('.description'));
+
+var effect = {
+	in: {
+		duration: 1000,
+		delay: function(el, index) { 
+			return 2500+index*40; 
+		},
+		easing: 'easeOutExpo',
+		opacity: 1,
+		translateY: ['50%','0%']
+	},
+	out: {
+		duration: 500,
+		delay: function(el, index) { 
+			return index*0; 
+		},
+		easing: 'easeOutExpo',
+		opacity: 0,
+		translateY: '-50%'
+	}
+}
+
+description.hide(effect,() => {
+	description.show(effect);
+})
+
+
+
 var line = anime({
     targets: ".line",
-    width: "50%",
+    width: "40%",
     delay: "2000",
     easing: 'easeInOutQuart'
-})
+}).finished.then(() => {
+
+});
 
 
 </script>
