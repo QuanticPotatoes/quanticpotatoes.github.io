@@ -18,24 +18,29 @@
         <p><a href="#">Accueil</a></p>
         <p><a href="#">Portfolio</a></p>
         <p><a href="#">A propos</a></p>
+        <div id="avatar">
+            <img src="img/avatar.jpeg" alt="">
+        </div>
     </header>
     <div style="height: 50px;"></div>
     <div id="particles-js"></div>
     <div id="homePresentation">
         <div id="me_container">
-        <div>
-            <p id="me">Bonjour,   
-                	<br>Je suis Jérémy<br> Etudiant Développeur</p>
-                </div>
-                <div>
-                	<img src="img/avatar.jpeg" alt="">
-                </div>
+        <p class="me-text">Jeremy Dieuze</p>
         </div>
+    <div class="line"><hr style="height:2px;border:none;color:#333;background-color:#333;" /></div>
+    <p>Etudiant ingénieur en informatique</p>
+
     </div>
 </body>
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.min.js"></script>
+<script src="js/segment.min.js"></script>
+<script src="js/d3-ease.v0.6.js"></script>
+<script src="js/letters.js"></script>
+<script src="js/anime.min.js"></script>
+
 <script>
 particlesJS("particles-js", {
     "particles": {
@@ -147,6 +152,38 @@ particlesJS("particles-js", {
     },
     "retina_detect": true
 });
+</script>
+    
+<script>
+// Selecting the container element
+var el = document.querySelector('.me-text');
+
+// All the possible options (these are the default values)
+// Remember that every option (except individualDelays) can be defined as single value or array
+var options =  {   // word 3
+            size : 150,
+            weight : 12,
+            color: '#151517',
+            duration: 0.4,
+            fade: 0,
+            delay: 0.2,
+            easing: d3_ease.easePolyOut.ease
+        };
+
+// Initializing the text (Letters parameters: container-element, options)
+var myText = new Letters(el, options);
+
+// Show letters with the default options defined
+myText.show();
+
+var line = anime({
+    targets: ".line",
+    width: "50%",
+    delay: "2000",
+    easing: 'easeInOutQuart'
+})
+
+
 </script>
 <!-- <script src="sketch.js"></script> -->
 

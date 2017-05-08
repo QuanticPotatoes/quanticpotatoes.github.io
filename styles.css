@@ -50,6 +50,7 @@ header a:hover {
 	width: 100%;
 	height: 1000px;
 	margin: auto;
+	text-align: center;
 
 }
 
@@ -66,14 +67,30 @@ header a:hover {
 	margin-top: 50px;
 }
 
+#avatar {
+	width: 100%;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	top: -60px;
+}
+
+#avatar img {
+	position: relative;
+	border-radius: 50%;
+	border: solid 1px #e6e6e6 ;
+	width: 45px;
+	margin: auto;
+}
+
 #me {
-	font-size: 2em;
+	color: white;
 }
 
 #homePresentation p {
 	color: #3d3d3d;
-	font-size: 3em;
-	padding-top: 50px;
+	font-size: 1.5em;
 }
 
 #particles-js {
@@ -83,4 +100,10 @@ header a:hover {
   width: 100%;
   margin-top: -20px;
   height: auto;
+}
+
+.line {
+	margin-left: auto;
+	margin-right: auto;
+	width: 0%;
 }
