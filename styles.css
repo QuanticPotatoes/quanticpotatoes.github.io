@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'NexaBold';
+    src:url('font/NexaBold.ttf.woff') format('woff'),
+        url('font/NexaBold.ttf.svg#NexaBold') format('svg'),
+        url('font/NexaBold.ttf.eot'),
+        url('font/NexaBold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+p {
+	font-family: 'NexaBold';
+}
+
+/*----------  HEADER  ----------*/
+
+header {
+	display: flex;
+	float: left;
+	height: 50px;
+	border-bottom: 1px solid #e6e6e6;
+	width: 100%; 
+	position: fixed;
+	padding-left: 10px;
+	background: white;
+}
+
+header p {
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 50px;
+	padding-top: 12.5px;
+}
+
+header a {
+	color: #3d3d3d;
+	text-decoration: none;
+}
+
+header a:hover {
+	color: #3d3d3d;
+	text-decoration: none;
+}
+
+/*----------  home presentation  ----------*/
+
+#homePresentation {
+
+	width: 100%;
+	height: 1000px;
+	margin: auto;
+
+}
+
+#me_container {
+	width: 50%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+#me_container img {
+	border-radius: 50%;
+	border: solid 3px #e6e6e6;
+	margin-top: 50px;
+}
+
+#me {
+	font-size: 2em;
+}
+
+#homePresentation p {
+	color: #3d3d3d;
+	font-size: 3em;
+	padding-top: 50px;
+}
+
+#particles-js {
+  background: white;
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  margin-top: -20px;
+  height: auto;
+}
