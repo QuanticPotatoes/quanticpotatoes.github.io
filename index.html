@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css">
     <style>
     * {
         //border: solid 1px black;
@@ -15,76 +16,107 @@
 </head>
 
 <body>
+
     <header>
         <p><a href="#">Accueil</a></p>
-        <p><a href="#">Portfolio</a></p>
-        <p><a href="#">A propos</a></p>
+        <p><a href="#">Cursus</a></p>
+        <p><a href="#">Travail</a></p>
+        <p><a href="#">Competences</a></p>
         <div id="avatar">
             <img src="img/avatar.jpeg" alt="">
         </div>
     </header>
+    <div id="fullpage">
     <div style="height: 50px;"></div>
-    <div id="particles-js"></div>
-    <div id="homePresentation">
-        <div id="me_container">
-        <p class="me-text">Jeremy Dieuze</p>
+    
+        <div id="particles-js"></div>
+        <div class="section">
+            <div id="homePresentation">
+                <div id="me_container">
+                    <p class="me-text">Jeremy Dieuze</p>
+                </div>
+                <div class="line">
+                    <hr style="height:2px;border:none;color:#333;background-color:#333;" />
+                </div>
+                <p class="description">Etudiant ingénieur en informatique</p>
+            </div>
         </div>
-    <div class="line"><hr style="height:2px;border:none;color:#333;background-color:#333;" /></div>
-    <p class="description">Etudiant ingénieur en informatique</p>
-    </div>
+        <div class="section" id="about">
+            <img id="background" src="http://thefoxisblack.com/desktop-wallpaper/sam-ellis-design-wallpaper-2560x1440.jpg" alt="">
+            <div class="read" id="about_one">
+                <h3>- A propos -</h3>
+                <p>Bonjour, je m'appelle Jérémy, <br><br>
+                Pour parler un peu. Je suis passionné de sciences, de nouvelles technologies, d'informatique, de dévellopement Web et logiciels.
+                Je suis actuellement en train de finaliser ma <i>2<sup>e</sup> année</i> au sein de l'EXIA CESI, une
+                école d'ingénieur spécialisé en informatique. <i>Avant cela j'ai obtenu un baccalauréat S avec l'option Science de l'ingénieur.</i><br>
+                <br></p>
+            </div>
+            <div class="read" id="about_two">
+                <h3>- Perspective -</h3>
+                <p>Dans mes perspective. Je souhaite orienté mes études vers un master en recherche grâce à un partenariat avec l'UQAM à Montréal, puis d'effectuer un doctorat.<br><br> Tout cela afin de pouvoir faire par la suite de la recherche dans des domaines tel que l'intelligence artificielle et systèmes cognitifs.</p>
+            </div>
+        </div>
+        <div class="section">
+            <section id="cursus">
+                <!--        <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=16MQBiyXKgqM1gZ4e6MzMCziL3wlRp0nX42ne-GRLeEI&font=Lustria-Lato&lang=fr&initial_zoom=2&height=800' width='100%' height='800' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe> -->
+            </section>
+            <section id="competence">
+                
+                <div class="msrny">
+                    <div class="item">
+                        <img src="http://placehold.it/200x200">
+                    </div>
+                    <div class="item">
+                        <img src="http://placehold.it/200x200">
+                    </div>
+                    <div class="item">
+                        <img src="http://placehold.it/200x200">
+                    </div>
+                    <div class="item">
+                        <img src="http://placehold.it/200x200">
+                    </div>
+                    <div class="item">
+                        <img src="http://placehold.it/200x200">
+                    </div>
+                    <div class="item">
+                        <img src="http://placehold.it/200x200">
+                    </div>
 
-    <section id="cursus">
-<!--     	<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=16MQBiyXKgqM1gZ4e6MzMCziL3wlRp0nX42ne-GRLeEI&font=Lustria-Lato&lang=fr&initial_zoom=2&height=800' width='100%' height='800' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe> -->
-    </section>
-    <section id="competence">
-    <h2>compétences</h2>
-    <div id="msrny" class="msrny">
-        <div class="item">
-            <img src="http://placehold.it/200x200">
+                </div>
+            </section>
         </div>
-                <div class="item">
-            <img src="http://placehold.it/200x200">
-        </div>
-                <div class="item">
-            <img src="http://placehold.it/200x200">
-        </div>
-                <div class="item">
-            <img src="http://placehold.it/200x200">
-        </div>
-                <div class="item">
-            <img src="http://placehold.it/200x200">
-        </div>
-                <div class="item">
-            <img src="http://placehold.it/200x200">
-        </div>
-
     </div>
-    </section>
     <footer>
-    <div id="contact">
-        <p>Contact</p>
-        <p>165 Avenue de Boufflers</p>
-        <p>jeremy.dieuze@viacesi.fr</p>
-    </div>
-    <div><i class="fa fa-copyright" aria-hidden="true"></i>&nbsp;<u>Jérémy Dieuze</u> 2017, All rights reserved.</div>
-    <div id="social">
-    <i class="fa fa-github-alt" aria-hidden="true"></i>
-    <i class="fa fa-twitter" aria-hidden="true"></i>
-    <i class="fa fa-linkedin" aria-hidden="true"></i>    
-    </div>
+        <div id="contact">
+            <p>Contact</p>
+            <p>165 Avenue de Boufflers</p>
+            <p>jeremy.dieuze@viacesi.fr</p>
+        </div>
+        <div><i class="fa fa-copyright" aria-hidden="true"></i>&nbsp;<u>Jérémy Dieuze</u> 2017, All rights reserved.</div>
+        <div id="social">
+            <i class="fa fa-github-alt" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
     </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-3.0.0.js"></script>
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 <script src="js/segment.min.js"></script>
 <script src="js/d3-ease.v0.6.js"></script>
 <script src="js/letters.js"></script>
 <script src="js/anime.min.js"></script>
 <script src="js/charming.min.js"></script>
 <script src="js/textfx.js"></script>
-
-
+<script src="js/jquery.parralax.js"></script>
+<!--=============================
+=            Masonry            =
+==============================-->
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script type="text/javascript">
 let container = document.querySelector('.msrny');
@@ -96,16 +128,76 @@ let msnry = new Masonry(container, {
     isFitWidth: true
 });
 </script>
-
 <script src="js/firstlayer.js"></script>
-
-<!--=============================
-=            Masonry            =
-==============================-->
-
 <!--====  End of Masonry  ====-->
+<script>
+$(".item").on('mouseenter mousemove', function(e) {
+    let X = $(this).offset().left;
+    let Y = $(this).offset().top;
+
+    let position = {
+        X: (X + 50) - e.clientX,
+        Y: (Y + 50) - e.clientY
+    };
+
+    $(this).children('img').css({
+        transform: `rotateX(${(position.Y/5)}deg) rotateY(${-(position.X/5)}deg)`,
+    })
+});
+
+$(".item").on('mouseleave', function() {
+    $(this).children('img').css({
+        transform: 'rotateX(0deg) rotateY(0deg)'
+    })
+});
+
+$("#about").on('mouseenter mousemove', function(e) {
+    let X = $(this).offset().left;
+    let Y = $(this).offset().top;
+
+    let position = {
+        X: (X + $( window ).width() / 2) - e.clientX,
+        Y: (Y + $( window ).height() / 2) - e.clientY
+    };
+
+    $('#background').css({
+        transform: `rotateX(${(position.Y/200)}deg) rotateY(${-(position.X/200)}deg)`,
+    })
+});
+
+$("#about").on('mouseleave', function() {
+    $('#background').css({
+        transform: 'rotateX(0deg) rotateY(0deg)'
+    })
+});
 
 
+$(window).on('scroll', function() {
+    if ($(this).scrollTop() > 0) {
+        $('header').css({
+            background: 'white',
+            borderBottom: '1px solid #e6e6e6'
+        });
+    } else {
+        $('header').css({
+            background: 'none',
+            borderBottom: '1px solid transparent'
+        });
+    }
+});
+
+$(document).ready(function() {
+   $('#fullpage').fullpage();
+});
+
+
+var isFirefox = (/Firefox/i.test(navigator.userAgent));
+var mousewheelEvent = isFirefox ? "DOMMouseScroll" : "wheel";
+
+window.addEventListener(mousewheelEvent,() => {}, false);
+
+
+</script>
 <!-- <script src="sketch.js"></script> -->
 
 </html>
