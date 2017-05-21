@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <style>
     * {
         //border: solid 1px black;
@@ -16,7 +17,6 @@
 </head>
 
 <body>
-
     <header>
         <p><a href="#">Accueil</a></p>
         <p><a href="#">Cursus</a></p>
@@ -27,8 +27,7 @@
         </div>
     </header>
     <div id="fullpage">
-    <div style="height: 50px;"></div>
-    
+        <div style="height: 50px;"></div>
         <div id="particles-js"></div>
         <div class="section">
             <div id="homePresentation">
@@ -45,48 +44,110 @@
             <img id="background" src="http://thefoxisblack.com/desktop-wallpaper/sam-ellis-design-wallpaper-2560x1440.jpg" alt="">
             <div class="read" id="about_one">
                 <h3>- A propos -</h3>
-                <p>Bonjour, je m'appelle Jérémy, <br><br>
-                Pour parler un peu. Je suis passionné de sciences, de nouvelles technologies, d'informatique, de dévellopement Web et logiciels.
-                Je suis actuellement en train de finaliser ma <i>2<sup>e</sup> année</i> au sein de l'EXIA CESI, une
-                école d'ingénieur spécialisé en informatique. <i>Avant cela j'ai obtenu un baccalauréat S avec l'option Science de l'ingénieur.</i><br>
-                <br></p>
+                <p>Bonjour, je m'appelle Jérémy,
+                    <br>
+                    <br> Je suis passionné des sciences, des nouvelles technologies, d'informatique. Je suis actuellement en train de finaliser ma <i>2<sup>e</sup> année</i> au sein de l'EXIA CESI, une école d'ingénieur spécialisée en informatique. Avant cela j'ai obtenu un baccalauréat S avec l'option Science de l'ingénieur.
+                    <br>
+                    <br>La pédagogie de cette école repose notamment sur la PBL, méthode mettant en avant l'autonomie et l'acquisition de connaissance par la pratique.</p>
             </div>
             <div class="read" id="about_two">
-                <h3>- Perspective -</h3>
-                <p>Dans mes perspective. Je souhaite orienté mes études vers un master en recherche grâce à un partenariat avec l'UQAM à Montréal, puis d'effectuer un doctorat.<br><br> Tout cela afin de pouvoir faire par la suite de la recherche dans des domaines tel que l'intelligence artificielle et systèmes cognitifs.</p>
+                <h3>- Perspectives -</h3>
+                <p>Je souhaite orienté mes études vers un double diplôme ( Ingénieur spécialisé en informatique et une maîtrise en informatique ) grâce au partenariat avec l'UQAM à Montréal. Je souhaite poursuivre par la suite mes études afin d'effectuer un doctorat.
+                    <br>
+                    <br> Mon objectif étant de pouvoir faire de la recherche en informatique dans des domaines tel que l'intelligence artificielle et systèmes cognitifs. Domaines qui vont sans doute boulverser et refaçonner nos sociétés dans un avenir assez proche.</p>
             </div>
         </div>
         <div class="section">
             <section id="cursus">
                 <!--        <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=16MQBiyXKgqM1gZ4e6MzMCziL3wlRp0nX42ne-GRLeEI&font=Lustria-Lato&lang=fr&initial_zoom=2&height=800' width='100%' height='800' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe> -->
-            </section>
+            </section> 
             <section id="competence">
-                
-                <div class="msrny">
+                <div class="msrny" id="msrny_competence">
                     <div class="item">
-                        <img src="http://placehold.it/200x200">
+                        <img src="img/competence/c.png">
                     </div>
                     <div class="item">
-                        <img src="http://placehold.it/200x200">
+                        <img src="img/competence/c_sharp.png">
                     </div>
                     <div class="item">
-                        <img src="http://placehold.it/200x200">
+                        <img src="img/competence/java.png">
                     </div>
                     <div class="item">
-                        <img src="http://placehold.it/200x200">
+                        <img src="img/competence/sql.png">
                     </div>
                     <div class="item">
-                        <img src="http://placehold.it/200x200">
+                        <img src="img/competence/bash.png">
                     </div>
                     <div class="item">
-                        <img src="http://placehold.it/200x200">
+                        <img src="img/competence/node.png">
                     </div>
+                    <div class="item">
+                        <img src="img/competence/php.png">
+                    </div>
+                </div>
+                <div class="main-carousel">
+                        <div class="carousel-cell">
+                            <div class="cell-container">
+                                <div>Projet de shell codé en C</div>
+                                <div>Projet d'analyse vocale en C++ et python</div>
+                                <div>Programmation d'une ruche connecté à l'aide d'ardunio</div>
+                            </div>
+                            <img width="50%" src="img/competence/carousel/shell_menu.png">
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="cell-container">
+                                <div>Projet de shell codé en C</div>
+                                <div>Projet d'analyse vocale en C++ et python</div>
+                                <div>Programmation d'une ruche connecté à l'aide d'ardunio</div>
+                            </div>
+                            <img width="50%" src="img/competence/carousel/shell_menu.png">
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="cell-container">
+                                <div>Projet de shell codé en C</div>
+                                <div>Projet d'analyse vocale en C++ et python</div>
+                                <div>Programmation d'une ruche connecté à l'aide d'ardunio</div>
+                            </div>
+                            <img width="50%" src="img/competence/carousel/shell_menu.png">
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="cell-container">
+                                <div>Projet de shell codé en C</div>
+                                <div>Projet d'analyse vocale en C++ et python</div>
+                                <div>Programmation d'une ruche connecté à l'aide d'ardunio</div>
+                            </div>
+                            <img width="50%" src="img/competence/carousel/shell_menu.png">
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="cell-container">
+                                <div>Projet de shell codé en C</div>
+                                <div>Projet d'analyse vocale en C++ et python</div>
+                                <div>Programmation d'une ruche connecté à l'aide d'ardunio</div>
+                            </div>
+                            <img width="50%" src="img/competence/carousel/shell_menu.png">
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="cell-container">
+                                <div>Projet de shell codé en C</div>
+                                <div>Projet d'analyse vocale en C++ et python</div>
+                                <div>Programmation d'une ruche connecté à l'aide d'ardunio</div>
+                            </div>
+                            <img width="50%" src="img/competence/carousel/shell_menu.png">
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="cell-container">
+                                <div>Projet de shell codé en C</div>
+                                <div>Projet d'analyse vocale en C++ et python</div>
+                                <div>Programmation d'une ruche connecté à l'aide d'ardunio</div>
+                            </div>
+                            <img width="50%" src="img/competence/carousel/shell_menu.png">
+                        </div>
 
                 </div>
             </section>
         </div>
     </div>
-    <footer>
+<!--     <footer>
         <div id="contact">
             <p>Contact</p>
             <p>165 Avenue de Boufflers</p>
@@ -98,9 +159,10 @@
             <i class="fa fa-twitter" aria-hidden="true"></i>
             <i class="fa fa-linkedin" aria-hidden="true"></i>
         </div>
-    </footer>
+    </footer> -->
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-3.0.0.js"></script>
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -127,11 +189,27 @@ let msnry = new Masonry(container, {
     gutter: 10,
     isFitWidth: true
 });
+
+let carrousel = $('.main-carousel').flickity({
+  // options
+  cellAlign: 'center',
+  contain: false,
+  selectedAttraction: 0.01,
+  friction: 0.15
+});
+
+let nodesMsnry = Array.prototype.slice.call( document.getElementById('msrny_competence').children );
+
 </script>
 <script src="js/firstlayer.js"></script>
 <!--====  End of Masonry  ====-->
 <script>
 $(".item").on('mouseenter mousemove', function(e) {
+
+    if(e.type === 'mouseenter'){
+        carrousel.flickity( 'select', nodesMsnry.indexOf(this) );
+    }
+
     let X = $(this).offset().left;
     let Y = $(this).offset().top;
 
@@ -156,8 +234,8 @@ $("#about").on('mouseenter mousemove', function(e) {
     let Y = $(this).offset().top;
 
     let position = {
-        X: (X + $( window ).width() / 2) - e.clientX,
-        Y: (Y + $( window ).height() / 2) - e.clientY
+        X: (X + $(window).width() / 2) - e.clientX,
+        Y: (Y + $(window).height() / 2) - e.clientY
     };
 
     $('#background').css({
@@ -187,16 +265,14 @@ $(window).on('scroll', function() {
 });
 
 $(document).ready(function() {
-   $('#fullpage').fullpage();
+    $('#fullpage').fullpage();
 });
 
 
 var isFirefox = (/Firefox/i.test(navigator.userAgent));
 var mousewheelEvent = isFirefox ? "DOMMouseScroll" : "wheel";
 
-window.addEventListener(mousewheelEvent,() => {}, false);
-
-
+window.addEventListener(mousewheelEvent, () => {}, false);
 </script>
 <!-- <script src="sketch.js"></script> -->
 

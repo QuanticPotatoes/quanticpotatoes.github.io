@@ -137,6 +137,7 @@ section {
 .msrny {
 	width: 50%;
 	margin: 0 auto;
+	margin-bottom: 50px;
 }
 
 .msrny .item {
@@ -149,11 +150,33 @@ section {
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-/*.msrny .item img:hover {
-	//box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-	transform: rotateX(30deg);
+.msrny .item img:hover {
+  /*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
 }
-*/
+
+.carousel-cell {
+	width: 100%;
+	display: flex;
+}
+
+.cell-container {
+	width: 50%;
+	height: 500px;
+	/*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+}
+
+.cell-container > div {
+	height: 50px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+.cell-container > div:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 
 /*----------  about   ----------*/
 
